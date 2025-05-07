@@ -118,7 +118,7 @@
       var formData = new FormData(this);
 
       // Send email via EmailJS
-      emailjs.sendForm('service_9hc2yq6', 'template_aw6mjub', formData)
+      emailjs.sendForm('service_9hc2yq6', 'template_aw6mjub', this)
         .then(function(response) {
           console.log('Success:', response);
           window.location.href = "thank_you.html";  // Redirect to Thank You page
